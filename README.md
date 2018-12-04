@@ -5,7 +5,7 @@ SpringBootAT is an implementation of the AT Structures for Spring Boot
 Steps to execute :
 
 1. (Build Spring Boot in order to produce the Spring Boot artifacts)
-2. export BRANCH_VERSION='version of Spring Boot branch'
+2. export SPRINGBOOT_BRANCH_VERSION='version of Spring Boot branch'
 3. mvn clean install -Dmaster
 
 ## License

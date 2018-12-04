@@ -29,7 +29,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>${BRANCH_VERSION}</version>
+                <version>${SPRINGBOOT_BRANCH_VERSION}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -40,32 +40,32 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot</artifactId>
-            <version>${BRANCH_VERSION}</version>
+            <version>${SPRINGBOOT_BRANCH_VERSION}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-actuator</artifactId>
-            <version>${BRANCH_VERSION}</version>
+            <version>${SPRINGBOOT_BRANCH_VERSION}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-actuator-autoconfigure</artifactId>
-            <version>${BRANCH_VERSION}</version>
+            <version>${SPRINGBOOT_BRANCH_VERSION}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-autoconfigure</artifactId>
-            <version>${BRANCH_VERSION}</version>
+            <version>${SPRINGBOOT_BRANCH_VERSION}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
-            <version>${BRANCH_VERSION}</version>
+            <version>${SPRINGBOOT_BRANCH_VERSION}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-test-support</artifactId>
-            <version>${BRANCH_VERSION}</version>
+            <version>${SPRINGBOOT_BRANCH_VERSION}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
