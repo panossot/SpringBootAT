@@ -1,0 +1,2 @@
+#@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/test-configurations/src/test/resources/org/springframework/boot/test/context"})
+Used by FilteredClassLoaderTests.java
