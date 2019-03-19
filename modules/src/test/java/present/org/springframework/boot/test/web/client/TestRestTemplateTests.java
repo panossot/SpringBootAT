@@ -69,7 +69,7 @@ import org.jboss.eap.additional.testsuite.annotations.ATTest;
  * @author Andy Wilkinson
  * @author Kristine Jetzke
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/src/main/java#2.2.0"})
 public class TestRestTemplateTests {
 
 	@Test
@@ -239,7 +239,7 @@ public class TestRestTemplateTests {
 		assertBasicAuthorizationInterceptorCredentials(basicAuth, "user", "password");
 	}
 
-	@ATTest({"modules/testcases/jdkAll/master/springboot/src/main/java#2.0.0.M1*2.2.0.M1"})
+	@ATTest({"modules/testcases/jdkAll/master/springboot/src/main/java#2.1.0.M3*2.2.0.M1"})
 	public void withBasicAuthDoesNotResetErrorHandler() {
 		TestRestTemplate originalTemplate = new TestRestTemplate("foo", "bar");
 		ResponseErrorHandler errorHandler = mock(ResponseErrorHandler.class);

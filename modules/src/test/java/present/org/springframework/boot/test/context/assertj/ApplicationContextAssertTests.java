@@ -32,6 +32,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 import static org.assertj.core.api.Assertions.assertThatIllegalArgumentException;
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
+import org.jboss.eap.additional.testsuite.annotations.ATTest;
 
 /**
  * Tests for {@link ApplicationContextAssert}.
@@ -250,7 +251,7 @@ public class ApplicationContextAssertTests {
 				.withMessageContaining("but found");
 	}
 
-	@Test
+	@ATTest({"modules/testcases/jdkAll/master/springboot/src/main/java#2.2.0"})
 	public void getBeanOfTypeWhenHasPrimaryBeanShouldReturnPrimary() {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
 				PrimaryFooConfig.class);

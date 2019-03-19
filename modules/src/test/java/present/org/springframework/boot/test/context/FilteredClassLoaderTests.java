@@ -32,7 +32,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  * @author Phillip Webb
  * @author Roy Jacobs
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/src/main/java#2.2.0"})
 public class FilteredClassLoaderTests {
 
 	private static ClassPathResource TEST_RESOURCE = new ClassPathResource(

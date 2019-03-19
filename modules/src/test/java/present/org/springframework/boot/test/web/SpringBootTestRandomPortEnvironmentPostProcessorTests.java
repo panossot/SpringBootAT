@@ -37,7 +37,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  * @author Andy Wilkinson
  */
 
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/src/main/java"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/src/main/java#2.2.0"})
 public class SpringBootTestRandomPortEnvironmentPostProcessorTests {
 
 	private SpringBootTestRandomPortEnvironmentPostProcessor postProcessor = new SpringBootTestRandomPortEnvironmentPostProcessor();
