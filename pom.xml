@@ -86,6 +86,11 @@
                 <updatePolicy>never</updatePolicy>
             </snapshots>
         </repository>
+        <repository>
+		<id>repository.spring.maven.libs</id>
+		<name>Spring Framework Maven  Repository</name>
+		<url>http://repo.spring.io/libs-milestone/</url>
+        </repository>
     </repositories>
 
     <pluginRepositories>

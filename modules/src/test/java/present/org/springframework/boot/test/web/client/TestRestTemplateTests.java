@@ -58,6 +58,7 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
+import org.jboss.eap.additional.testsuite.annotations.ATTest;
 
 /**
  * Tests for {@link TestRestTemplate}.
@@ -238,7 +239,7 @@ public class TestRestTemplateTests {
 		assertBasicAuthorizationInterceptorCredentials(basicAuth, "user", "password");
 	}
 
-	@Test
+	@ATTest({"modules/testcases/jdkAll/master/springboot/src/main/java#2.0.0.M1*2.2.0.M1"})
 	public void withBasicAuthDoesNotResetErrorHandler() {
 		TestRestTemplate originalTemplate = new TestRestTemplate("foo", "bar");
 		ResponseErrorHandler errorHandler = mock(ResponseErrorHandler.class);
@@ -247,6 +248,18 @@ public class TestRestTemplateTests {
 				"password");
 		assertThat(basicAuthTemplate.getRestTemplate().getErrorHandler())
 				.isSameAs(errorHandler);
+	}
+
+        @ATTest({"modules/testcases/jdkAll/master/springboot/src/main/java#2.2.0.BUILD"})
+	public void withBasicAuthShouldUseNoOpErrorHandler() throws Exception {
+		TestRestTemplate originalTemplate = new TestRestTemplate("foo", "bar");
+		ResponseErrorHandler errorHandler = mock(ResponseErrorHandler.class);
+		originalTemplate.getRestTemplate().setErrorHandler(errorHandler);
+		TestRestTemplate basicAuthTemplate = originalTemplate.withBasicAuth("user",
+				"password");
+		assertThat(basicAuthTemplate.getRestTemplate().getErrorHandler())
+				.isInstanceOf(Class.forName(
+						"org.springframework.boot.test.web.client.TestRestTemplate$NoOpResponseErrorHandler"));
 	}
 
 	@Test
