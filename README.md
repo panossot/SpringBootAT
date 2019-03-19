@@ -8,6 +8,8 @@ Steps to execute :
 2. export SPRINGBOOT_BRANCH_VERSION='version of Spring Boot branch'
 3. mvn clean install -Dmaster
 
+Note : This AT starts from version 2.1.0.M3
+
 ## License
 
 Code distributed under [ASL 2.0](LICENSE.TXT)(licenses of the Active MQ test sources) and [GNU Lesser General Public License Version 2.1](http://www.gnu.org/licenses/lgpl-2.1-standalone.html) (for the repo).
