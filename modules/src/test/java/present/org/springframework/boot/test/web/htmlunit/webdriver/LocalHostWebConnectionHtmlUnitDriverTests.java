@@ -88,7 +88,7 @@ public class LocalHostWebConnectionHtmlUnitDriverTests {
 				.withMessageContaining("Environment must not be null");
 	}
 
-	@Test
+
 	public void getWhenUrlIsRelativeAndNoPortWillUseLocalhost8080() throws Exception {
 		MockEnvironment environment = new MockEnvironment();
 		LocalHostWebConnectionHtmlUnitDriver driver = new TestLocalHostWebConnectionHtmlUnitDriver(
@@ -98,7 +98,6 @@ public class LocalHostWebConnectionHtmlUnitDriverTests {
 				requestToUrl(new URL("http://localhost:8080/test")));
 	}
 
-	@Test
 	public void getWhenUrlIsRelativeAndHasPortWillUseLocalhostPort() throws Exception {
 		MockEnvironment environment = new MockEnvironment();
 		environment.setProperty("local.server.port", "8181");
