@@ -39,6 +39,7 @@ import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
+import org.jboss.eap.additional.testsuite.annotations.ATTest;
 
 /**
  * Tests for {@link LocalHostWebConnectionHtmlUnitDriver}.
@@ -88,7 +89,7 @@ public class LocalHostWebConnectionHtmlUnitDriverTests {
 				.withMessageContaining("Environment must not be null");
 	}
 
-
+        @ATTest({"modules/testcases/jdkAll/master/springboot/src/main/java#2.1.0.M3*2.2.0.M3"})
 	public void getWhenUrlIsRelativeAndNoPortWillUseLocalhost8080() throws Exception {
 		MockEnvironment environment = new MockEnvironment();
 		LocalHostWebConnectionHtmlUnitDriver driver = new TestLocalHostWebConnectionHtmlUnitDriver(
@@ -98,6 +99,7 @@ public class LocalHostWebConnectionHtmlUnitDriverTests {
 				requestToUrl(new URL("http://localhost:8080/test")));
 	}
 
+	@ATTest({"modules/testcases/jdkAll/master/springboot/src/main/java#2.1.0.M3*2.2.0.M3"})
 	public void getWhenUrlIsRelativeAndHasPortWillUseLocalhostPort() throws Exception {
 		MockEnvironment environment = new MockEnvironment();
 		environment.setProperty("local.server.port", "8181");
