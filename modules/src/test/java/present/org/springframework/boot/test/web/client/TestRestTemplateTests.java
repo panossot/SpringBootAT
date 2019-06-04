@@ -119,7 +119,7 @@ public class TestRestTemplateTests {
 		assertThat(new TestRestTemplate().getRootUri()).isEqualTo("");
 	}
 
-	@Test
+	@ATTest({"modules/testcases/jdkAll/master/springboot/src/main/java#2.2.0*2.2.0.M3"})
 	public void authenticated() {
 		assertThat(new TestRestTemplate("user", "password").getRestTemplate()
 				.getRequestFactory())
@@ -199,7 +199,7 @@ public class TestRestTemplateTests {
 
 	}
 
-	@Test
+	@ATTest({"modules/testcases/jdkAll/master/springboot/src/main/java#2.2.0*2.2.0.M3"})
 	public void withBasicAuthAddsBasicAuthInterceptorWhenNotAlreadyPresent() {
 		TestRestTemplate originalTemplate = new TestRestTemplate();
 		TestRestTemplate basicAuthTemplate = originalTemplate.withBasicAuth("user",
@@ -220,7 +220,7 @@ public class TestRestTemplateTests {
 				"password");
 	}
 
-	@Test
+	@ATTest({"modules/testcases/jdkAll/master/springboot/src/main/java#2.2.0*2.2.0.M3"})
 	public void withBasicAuthReplacesBasicAuthInterceptorWhenAlreadyPresent() {
 		TestRestTemplate original = new TestRestTemplate("foo", "bar")
 				.withBasicAuth("replace", "replace");
