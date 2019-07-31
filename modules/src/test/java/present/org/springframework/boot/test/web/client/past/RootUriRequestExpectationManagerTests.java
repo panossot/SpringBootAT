@@ -50,7 +50,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  *
  * @author Phillip Webb
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/src/main/java#2.1.0.M3**2.2.0.M4"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/src/main/java#2.1.0.M3*2.2.0.M4"})
 public class RootUriRequestExpectationManagerTests {
 
 	private String uri = "http://example.com";
