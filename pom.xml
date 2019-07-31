@@ -48,12 +48,12 @@
         <dependency>
             <groupId>org.jboss.eap.additional.testsuite</groupId>
             <artifactId>eap-additional-testsuite-source-distribution</artifactId>
-            <version>2.6.0.Final</version>
+            <version>2.9.0.Final</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.eap.additional.testsuite</groupId>
             <artifactId>eap-additional-testsuite-annotations</artifactId>
-            <version>2.6.0.Final</version>
+            <version>2.9.0.Final</version>
         </dependency>
     </dependencies>
 
@@ -180,16 +180,16 @@
 		   <mainClass>org.jboss.eap.additional.testsuite.source.distribution.AdditionalTestsuiteDistributeSources</mainClass>
 		   <arguments>
 		       
-                      <argument>${basedir}</argument>
-		       <argument>${basedir}/modules/src/test/java</argument>
-                       <argument>${serverDir2}</argument>
-                       <argument>${SPRINGBOOT_BRANCH_VERSION}</argument>
-                       <argument>versionOrder</argument>
-                       <argument></argument>
-                       <argument></argument>
-                       <argument></argument>
-                       <argument></argument>
-                       <argument></argument>
+                        <argument>${basedir}</argument>
+		        <argument>${basedir}/modules/src/test/java</argument>
+			<argument>${serverDir2}</argument>
+			<argument>${SPRINGBOOT_BRANCH_VERSION}</argument>
+			<argument>versionOrder</argument>
+		        <argument>${DISABLE_TESTS}</argument>
+		        <argument>${FEATURE_LIST}</argument>
+		        <argument>${PM_FEATURES}</argument>
+		        <argument>${DISABLE_SNAPSHOT_VERSIONS}</argument>
+                        <argument>${JBOSS_GIT_DIR}</argument>
                       
 		   </arguments>
 	       </configuration>
