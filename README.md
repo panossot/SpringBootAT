@@ -2,6 +2,8 @@
 
 ## SpringBootAT is an implementation of the AT Structures for Spring Boot
 
+### A PROJECT UNDER THE ΙΔΕΑ STATEMENT
+
 Steps to execute :
 
 1. (Build Spring Boot in order to produce the Spring Boot artifacts)
