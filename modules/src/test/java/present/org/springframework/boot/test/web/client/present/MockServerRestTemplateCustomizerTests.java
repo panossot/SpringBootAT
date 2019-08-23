@@ -37,7 +37,7 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  *
  * @author Phillip Webb
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/src/main/java#2.2.0.BUILD"})
+@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/src/main/java#2.2.0.M5"})
 class MockServerRestTemplateCustomizerTests {
 
 	private MockServerRestTemplateCustomizer customizer;
