@@ -1,4 +1,4 @@
-# SpringBootAT (Spring Boot has moved to grandle, so this AT needs some adaption)
+# SpringBootAT (Spring Boot has moved to grandle, so this AT needs some adaptation)
 
 ## SpringBootAT is an implementation of the AT Structures for Spring Boot
 
