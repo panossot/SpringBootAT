@@ -27,7 +27,6 @@ import org.jboss.eap.additional.testsuite.annotations.EapAdditionalTestsuite;
  *
  * @author Roland Weisleder
  */
-@EapAdditionalTestsuite({"modules/testcases/jdkAll/master/springboot/src/main/java"})
 public class OutputCaptureTests {
 
 	@Rule

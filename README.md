@@ -1,4 +1,4 @@
-# SpringBootAT (Spring Boot has moved to grandle, so this AT needs some adaptation)
+# SpringBootAT
 
 ## SpringBootAT is an implementation of the AT Structures for Spring Boot
 
@@ -6,9 +6,10 @@
 
 Steps to execute :
 
-1. (Build Spring Boot in order to produce the Spring Boot artifacts)
+1. (Build Spring Boot and Spring Boot Framework in order to produce the Spring Boot artifacts)
 2. export SPRINGBOOT_BRANCH_VERSION='version of Spring Boot branch'
-3. mvn clean install -Dmaster
+3. export SPRINGFRAMEWORK_BRANCH_VERSION='version of Spring Boot Framework branch'
+4. mvn clean install -Dmaster
 
 Note : This AT starts from version 2.1.0.M3
 
