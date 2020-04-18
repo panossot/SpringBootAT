@@ -6,7 +6,7 @@
 
 Steps to execute :
 
-1. (Build Spring Boot -- also Spring Boot Framework, spring-data-build, io.micrometer, etc if needed -- in order to produce the Spring Boot artifacts)
+1. (Build Spring Boot -- also Spring Boot Framework, spring-data-build, io.micrometer, reactor, spring-amqp, etc if needed -- in order to produce the Spring Boot artifacts)
 2. export SPRINGBOOT_BRANCH_VERSION='version of Spring Boot branch'
 3. export SPRINGFRAMEWORK_BRANCH_VERSION='version of Spring Boot Framework branch'
 4. mvn clean install -Dmaster
