@@ -6,7 +6,7 @@
 
 Steps to execute :
 
-1. (Build Spring Boot -- also Spring Boot Framework, spring-data-build, io.micrometer, reactor, spring-amqp, etc if needed -- in order to produce the Spring Boot artifacts)
+1. (Build Spring Boot -- also Spring Boot Framework, spring-data-build, io.micrometer, reactor, spring-amqp, spring-batch, etc if needed -- in order to produce the Spring Boot artifacts)
 2. Copy the artifacts of spring-boot/spring-boot-project/spring-boot-dependencies/build/local-m2-repository to your local maven repository
 3. export SPRINGBOOT_BRANCH_VERSION='version of Spring Boot branch'
 4. export SPRINGFRAMEWORK_BRANCH_VERSION='version of Spring Boot Framework branch'
